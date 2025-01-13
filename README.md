@@ -1,30 +1,38 @@
-Word Finder in Bounding Box
-What is This?
-This app helps you find words inside a box that you draw on a document. You can load a document with words and their positions, and then select a region. The app will tell you which words are inside that region.
+Document Word Finder
+A Python application with a graphical user interface that finds words within a specified bounding box in a document. The application processes normalized word coordinates from a JSON file and allows users to input document dimensions and bounding box coordinates to locate words in specific regions.
+Features
 
-Features:
+User-friendly graphical interface
+JSON file input support
+Coordinate scaling from normalized (0-1) to actual document dimensions
+Real-time word detection within specified bounding boxes
+Error handling and user feedback
+Scrollable results display
 
-Load a list of words and their positions from a file.
-Enter the size of your document and a box to search in.
-Find and list words inside the box you selected.
+Requirements
 
-Requirements:
 Python 3.x
-Tkinter (comes with Python)
+tkinter (usually comes with Python installation)
+JSON support (built into Python)
 
-How to Use:
-Run the App: Open a terminal and run this command:
+Usage
 
-python main.py
+Run the application:
 
-Enter Document Info: Type the document width and height.
+bashCopypython word_finder_gui.py
 
-Draw a Box: Enter the top-left and bottom-right coordinates for the box.
+Input the required information:
 
-Select a File: Choose the words_position_dict.txt file (this contains the words and their positions).
+Document Width (e.g., 1263)
+Document Height (e.g., 1644)
+Bounding Box Coordinates:
 
-See Results: The app will show the words inside your box.
+x1: Top-left x coordinate
+y1: Top-left y coordinate
+x2: Bottom-right x coordinate
+y2: Bottom-right y coordinate
 
-Example Input:
-Document Size: Width = 1263, Height = 1644
-Bounding Box: [358, 140, 498, 171]
+
+
+
+Click "Find Words" and select your JSON input file when prompted.
