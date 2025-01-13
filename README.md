@@ -1,17 +1,30 @@
 Word Finder in Bounding Box
-This Python application allows users to find words within a user-defined rectangular bounding box on a document. The document consists of words with their corresponding bounding boxes (represented by normalized coordinates). The app takes the document dimensions and user-drawn bounding box coordinates as input, and then displays the words that fall within the selected box.
+What is This?
+This app helps you find words inside a box that you draw on a document. You can load a document with words and their positions, and then select a region. The app will tell you which words are inside that region.
 
 Features:
-Load a list of words with their bounding box coordinates from a file.
-Enter the dimensions of the document and the coordinates of the user-drawn bounding box.
-Display words that are inside the bounding box.
+
+Load a list of words and their positions from a file.
+Enter the size of your document and a box to search in.
+Find and list words inside the box you selected.
 
 Requirements:
 Python 3.x
-Tkinter (included with Python)
+Tkinter (comes with Python)
 
 How to Use:
-Run the main.py script.
-Enter the document width, height, and your bounding box coordinates.
-Select the words_position_dict.txt file containing words and bounding box data.
-View the words inside the bounding box.
+Run the App: Open a terminal and run this command:
+
+python main.py
+
+Enter Document Info: Type the document width and height.
+
+Draw a Box: Enter the top-left and bottom-right coordinates for the box.
+
+Select a File: Choose the words_position_dict.txt file (this contains the words and their positions).
+
+See Results: The app will show the words inside your box.
+
+Example Input:
+Document Size: Width = 1263, Height = 1644
+Bounding Box: [358, 140, 498, 171]
